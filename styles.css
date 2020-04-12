@@ -1,0 +1,86 @@
+/*Devs:       Luke Miller
+Date:       4/27/2017
+Project:    Lawn Mowing Final */
+
+body, header, div, nav, li, ul, footer, article, aside, img{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+body{
+  font-family: 'Old Standard TT', serif;
+  background: url(background.jpg) no-repeat center fixed;
+  background-size: cover;
+  margin: auto 0;
+}
+
+.top {
+  background: #008b3b; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, #008b3b, #967552);
+  background: -moz-linear-gradient(right, #008b3b, #967552);
+  background: linear-gradient(to right, #008b3b, #967552);
+  position: fixed;
+  width: 100%;
+  /*padding: .1em;*/
+  color: white;
+  z-index: 0;
+}
+.logo{
+  float: left;
+  padding-left: .8em;
+}
+.phone{
+  float: right;
+  padding-right: .8em;
+}
+header img{
+  width: 100%;
+}
+nav{
+  position: fixed;
+  margin-top: 57px;
+  text-align: center;
+  background: #008b3b; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, #008b3b, #967552);
+  background: -moz-linear-gradient(right, #008b3b, #967552);
+  background: linear-gradient(to right, #008b3b, #967552);
+  width: 100%;
+}
+nav li{
+  display: inline-block;
+  font-size: 1.75em;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+.col-md-4{
+  background-color: #996633;
+  color: white;
+  box-sizing: border-box;
+  width: 33%;
+  /*border-style: solid;
+  border-width: medium;
+  border-color:	none;*/
+  height: 100%;
+}
+a:link{
+  text-decoration: none;
+  color: #333333;
+}
+
+a:hover{
+  color: white;
+
+}
+a:visited{
+  text-decoration: none;
+}
+footer{
+  background: #008b3b; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, #008b3b, #967552);
+  background: -moz-linear-gradient(right, #008b3b, #967552);
+  background: linear-gradient(to right, #008b3b, #967552);
+
+  width: 100%;
+  /*padding: .1em;*/
+  color: white;
+}
