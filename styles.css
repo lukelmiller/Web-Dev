@@ -1,19 +1,35 @@
-/*Devs:       Luke Miller
+/*Devs:       Chris Nibbelink/Luke Miller
 Date:       4/27/2017
 Project:    Lawn Mowing Final */
 
+/*Reset Styles:*/
 body, header, div, nav, li, ul, footer, article, aside, img{
   margin: 0;
   padding: 0;
   border: 0;
 }
+a:link{
+  text-decoration: none;
+  color: #333333;
+}
+a:visited{
+  text-decoration: none;
+  color: #333333;
+}
+
+/*Body Continuity (Fonts & Background):*/
 body{
   font-family: 'Old Standard TT', serif;
-  background: url(background.jpg) no-repeat center fixed;
+  background: url(images/background.jpg) no-repeat center fixed;
   background-size: cover;
   margin: auto 0;
 }
+h3{
+  font-size: 1.2em;
+  color: white;
+}
 
+/*Header Styles:*/
 .top {
   background: #008b3b; /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(left, #008b3b, #967552);
@@ -21,9 +37,9 @@ body{
   background: linear-gradient(to right, #008b3b, #967552);
   position: fixed;
   width: 100%;
-  /*padding: .1em;*/
   color: white;
-  z-index: 0;
+  z-index: 10;
+  opacity: .98;
 }
 .logo{
   float: left;
@@ -32,9 +48,6 @@ body{
 .phone{
   float: right;
   padding-right: .8em;
-}
-header img{
-  width: 100%;
 }
 nav{
   position: fixed;
@@ -45,6 +58,8 @@ nav{
   background: -moz-linear-gradient(right, #008b3b, #967552);
   background: linear-gradient(to right, #008b3b, #967552);
   width: 100%;
+  z-index: 10;
+  opacity: .97;
 }
 nav li{
   display: inline-block;
@@ -52,35 +67,113 @@ nav li{
   padding-left: 2%;
   padding-right: 2%;
 }
-.col-md-4{
-  background-color: #996633;
-  color: white;
-  box-sizing: border-box;
-  width: 33%;
-  /*border-style: solid;
-  border-width: medium;
-  border-color:	none;*/
-  height: 100%;
+header img{
+  width: 100%;
 }
-a:link{
-  text-decoration: none;
-  color: #333333;
-}
-
 a:hover{
   color: white;
-
 }
-a:visited{
-  text-decoration: none;
+
+/*Article Styles:*/
+article{
+  height: 100%;
+  color: white;
+  width: 100%;
+  background-color: #996633;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+article p{
+  font-size: 1.5em;
+}
+
+/*BS Column Styles:*/
+.row{
+  width: 101%;
+  height: 100%;
+}
+.col-md-3{
+  background-color: #996633;
+  color: white;
+  height: 35vh;
+  text-align: center;
+}
+.img-shrink img{
+  padding: 80px 0;
+  max-width: 90px;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  display: block;
+}
+
+/*Form Styles:*/
+.form{
+  background-color: #996633;
+  padding-left: 4%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/*Footer Styles:*/
+footer li{
+  display: inline-block;
+  padding-right: 4px;
+  padding-left: 4px;
 }
 footer{
   background: #008b3b; /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(left, #008b3b, #967552);
   background: -moz-linear-gradient(right, #008b3b, #967552);
   background: linear-gradient(to right, #008b3b, #967552);
-
+  text-align: center;
   width: 100%;
-  /*padding: .1em;*/
   color: white;
+}
+
+/*Responsive Design:*/
+@media only screen and (max-width: 1166px){
+  .col-md-3{
+    height: 40vh;
+  }
+}
+@media only screen and (max-width: 990px){
+  .img-shrink img{
+    padding: 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .col-md-3{
+    height: 100%;
+    padding: 20px;
+    width: 101.5%;
+  }
+}
+@media only screen and (max-width: 670px){
+  .img-shrink img{
+    padding: 15px;
+  }
+  img{
+    display: none;
+  }
+  article, .form, .row{
+    padding-top: 80px;
+  }
+}
+@media only screen and (max-width: 505px){
+  .img-shrink, .brack{
+    display: none;
+  }
+  article, .form, .row{
+    padding-top: 180px;
+  }
+  nav li{
+    display: block;
+  }
+  footer li{
+    display: block;
+  }
 }

@@ -1,35 +1,94 @@
 <!DOCTYPE html>
-<html lan="en">
+<html lang="en">
   <head>
-    <!-- Devs:    Luke Miller
+    <!-- Devs:       Chris Nibbelink/Luke Miller
     Date:       4/27/2017
     Project:    Lawn Mowing Final -->
     <meta charset="utf-8">
     <title>417 Lawn: Services</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="styles.css" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
   </head>
   <body>
     <header>
       <div class="top">
         <h2 class="logo">417 Lawn Salon</h2>
-        <h2 class="phone"><a href="/contactus.html"><button  class="btn btn-primary">CALL US</button></a></h2>
+        <h2 class="phone"><a href="/sp17/lukem/final/contactus.html"><button  class="btn btn-primary">CONTACT US</button></a></h2>
       </div>
       <nav>
         <ul>
-          <li><a href="/index.html">Home</a></li>
-          <li>|</li>
-          <li style="color: white;"><a href="/services.html">Services</a></li>
-          <li>|</li>
-          <li><a href="/aboutus.html">About Us</a></li>
-          <li>|</li>
-          <li><a href="/reviews.html">Reviews</a></li>
+          <li><a href="/sp17/lukem/final/index.html">Home</a></li>
+          <li class="brack">|</li>
+          <li><a href="/sp17/lukem/final/services.html" style="color: white;">Services</a></li>
+          <li class="brack">|</li>
+          <li><a href="/sp17/lukem/final/aboutus.html">About Us</a></li>
+          <li class="brack">|</li>
+          <li><a href="/sp17/lukem/final/reviews.html">Reviews</a></li>
         </ul>
       </nav>
-      <img src="services.jpg" alt="Dog In Lawn">
-
+      <img src="images/services.jpg" alt="Dog In Lawn">
     </header>
+    <div class="form">
+      <form action="/sp17/lukem/final/formsub.html">
+        <h3>First Name:</h3>
+        <input type="text" name="firstname" value="">
+        <br>
+        <h3>Last Name:</h3>
+        <input type="text" name="lastname" value="">
+        <br>
+        <h3>Physical Address:</h3>
+        <input type="text" name="address" value="">
+        <br>
+        <h3>City:</h3>
+        <input type="text" name="city" value="">
+        <br>
+        <h3>State:</h3>
+        <input type="text" name="state" value="MO">
+        <br>
+        <h3>Zip Code:</h3>
+        <input type="text" name="state" value="">
+        <br>
+        <h3>Phone Number:</h3>
+        <input type="text" name="phone" value="417">
+        <h3>Yard Type:</h3>
+        <select name="type">
+          <option value="residential">Residential</option>
+          <option value="business">Business</option>
+        </select>
+        <br>
+        <h3>What I Am Looking To Have Done:</h3>
+        <input type="checkbox" name="Consoltation" value="consoltaton">  Consultation
+        <br>
+        <input type="checkbox" name="Mowing" value="mow">  Mowing
+        <br>
+        <input type="checkbox" name="Weed-Wacking" value="mow">  Weed-Wacking
+        <br>
+        <input type="checkbox" name="Hedge" value="mow">  Hedge/Bush Land-Scaping
+        <br>
+        <input type="checkbox" name="pest" value="mow">  Pest Control
+        <br>
+        <input type="checkbox" name="total" value="mow">  Total Land-Scape | Total Make-Over
+        <br>
+        <input type="checkbox" name="other" value="mow">  Other
+        <br><br>
 
 
+
+        <input type="submit" value="Submit">
+
+      </form>
+
+    </div>
+
+    <footer itemtype="http://schema.org/LocalBusiness" itemscope>
+      <ul>
+        <li>417 East Kearney Street Springfield, MO, 65725</li>
+        <li class="brack">|</li>
+        <li>1-800-669-5296</li>
+        <li class="brack">|</li>
+        <li>417 Lawn Salon &copy; 2017</li>
+      </ul>
+    </footer>
   </body>
 </html>
