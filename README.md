@@ -1,2 +1,2 @@
-# Web-Dev-Final
-Final project for web dev 1. This was a fun project for me, freshman year of college. Super fun class glad I came across this project.
+# Web-Dev
+This is a repo for my Website Development I final project. OTC Website Development I Spring 2017 CIS 130. This was a fun project for me, senior year of high school. Super fun class glad I came across this project.
